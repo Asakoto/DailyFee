@@ -9,7 +9,7 @@ st.title("🏡 綠園水電瓦斯月度分析")
 st.write("可選擇多個年份及費用類型進行比較")
 
 # 讀取資料
-df = pd.read_csv("utility_cost_full.csv")
+df = pd.read_csv("綠園水電瓦斯.csv")
 
 # 多選年份
 years = st.multiselect("選擇年份（可複選）", sorted(df["年份"].unique()), default=sorted(df["年份"].unique()))
